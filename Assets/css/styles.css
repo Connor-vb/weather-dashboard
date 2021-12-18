@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+}
+
+#search-fun {
+    width: 30%;
+    float: left;
+    display: flex;
+    height: 100%;
+}
