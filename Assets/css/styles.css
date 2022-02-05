@@ -8,3 +8,15 @@ html, body {
     display: flex;
     height: 100%;
 }
+
+#nav {
+    background: linear-gradient(.25turn, rgb(25, 25, 228), rgb(76, 40, 134));
+}
+
+#nav h1 {
+    color: #eee;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7px 0;
+}

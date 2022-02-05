@@ -11,49 +11,62 @@
 </head>
 
 <body>
-  <div class="container" id="search-fun">
-    <div class="row">
-      <!-- search form -->
-      <div class="col">
-        <form>
-          <div class="title">
-            <h2>Search for a City:</h2>
-          </div>
-          <div class="form-group">
-            <label for="weather">San Diego</label>
-            <input type="text" class="form-control" id="search-text" aria-describedby="search-txt">
-          </div>
-          <button type="button" onclick="search()" class="btn btn-primary" id="search-btn">Search</button>
-        </form>
-      </div>
-    </div>
-    <!-- search results listed -->
 
+  <!-- check the navs documentation on bootstrap -->
 
-  </div>
-  <!-- right side -->
-  <div class="container">
-    <div class="row">
-      <div class="card">
-        <div class="card-body">
-          <h2 id="city-res"></h2>
-          <p id="current-temp">Temp:</p>
-          <p id="current-wind">Wind:</p>
-          <p id="current-hum">Humidity:</p>
-          <p id="current-uv">UV Index:</p>
+  <nav class="nav-title justify-content-center" id="nav">
+    <h1>Weather Dashboard</h1>
+  </nav>
 
+  <!-- Check the formatting of the body -->
+
+  <main>
+    <div class="container" id="search-fun">
+      <div class="row">
+        <!-- search form -->
+        <div class="col">
+          <form>
+            <div class="title">
+              <h2>Search for a City:</h2>
+            </div>
+            <div class="form-group">
+              <label for="weather"></label>
+              <input type="text" class="form-control" id="search-text" aria-describedby="search-txt">
+            </div>
+            <button type="button" onclick="search()" class="btn btn-primary" id="search-btn">Search</button>
+          </form>
         </div>
       </div>
+      <!-- search results listed -->
+      <div class="search-results"></div>
+  </main>
+
+  <section>
     </div>
+    <!-- right side -->
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h2 id="city-res"></h2>
+            <p id="current-temp">Temp:</p>
+            <p id="current-wind">Wind:</p>
+            <p id="current-hum">Humidity:</p>
+            <p id="current-uv">UV Index:</p>
 
+          </div>
+        </div>
+      </div>
+  </section>
 
+  <article>
     <!-- 5 day -->
     <div class="row">
       <!-- day 1 -->
       <div class="col">
-        <div class="card">
+        <div class="card bg-dark text-white m-5">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 id="date-one"></h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p id="day-one-t">Temp:</p>
             <p id="day-one-wind">Wind:</p>
@@ -63,9 +76,9 @@
       </div>
       <!-- day 2 -->
       <div class="col">
-        <div class="card">
+        <div class="card bg-dark text-white m-5">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 id="date-two"></h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p id="day-two-t">Temp:</p>
             <p id="day-two-wind">Wind:</p>
@@ -75,9 +88,9 @@
       </div>
       <!-- day 3 -->
       <div class="col">
-        <div class="card">
+        <div class="card bg-dark text-white m-5">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 id="date-three"></h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p id="day-three-t">Temp:</p>
             <p id="day-three-wind">Wind:</p>
@@ -87,9 +100,9 @@
       </div>
       <!-- day 4 -->
       <div class="col">
-        <div class="card">
+        <div class="card bg-dark text-white m-5">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 id="date-four"></h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p id="day-four-t">Temp:</p>
             <p id="day-four-wind">Wind:</p>
@@ -99,9 +112,9 @@
       </div>
       <!-- day 5 -->
       <div class="col">
-        <div class="card">
+        <div class="card bg-dark text-white m-5">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 id="date-five"></h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p id="day-five-t">Temp:</p>
             <p id="day-five-wind">Wind:</p>
@@ -110,10 +123,14 @@
         </div>
       </div>
     </div>
+    </div>
+  </article>
 
-  </div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
+
 </html>
