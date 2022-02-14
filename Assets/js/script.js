@@ -11,7 +11,7 @@ var searchedCity = document.createElement("BUTTON");
 searchedCity.innerHTML=localStorage.getItem("City");
 document.getElementById("search-text").appendChild(searchedCity);
 console.log(searchedCity);
-var urlOne = "http://api.openweathermap.org/data/2.5/weather?q=" + searchCity + "&appid=" + key;
+var urlOne = "https://api.openweathermap.org/data/2.5/weather?q=" + searchCity + "&appid=" + key;
 console.log(searchCity);
 fetch (urlOne).then(
     res=>res.json().then(
